@@ -25,6 +25,7 @@ for i in range(len(tab4)):
     if a.find('7')==-1 and a.find('1')==-1:
         tab5.append(tab4[i])
 
+
 tab6=[]
 for i in range(len(tab5)):
     a=str(tab5[i])
@@ -36,11 +37,8 @@ for i in range(len(tab6)):
     a=str(tab6[i])
     if str(len(a)) == a[len(a)-1]:
         tab7.append(tab6[i])
+print(tab7)
 
-tab8=[]
-for i in range(len(tab7)):
-    if i%2!=0:
-        tab8.append(tab7[i])
 
-mystery_number=tab8[0]
+mystery_number=tab7[0]
 print(f'Le nombre mystère est le : {mystery_number}')
