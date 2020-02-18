@@ -36,7 +36,7 @@
         <tr v-for="employee,index in employees" >
            <td> {{ employee.id }} </td>
            <td> {{ employee.employee_name }} </td>
-           <td> {{ employee.employee_name.substring(0,1) + '.'+ employee.employee_name.substring(employee.employee_name.lastIndexOf(" ") + 1 ) +  '@gmail.com' }} </td>
+           <td> {{ employee.employee_name.substring(0,1) + '.'+ employee.employee_name.substring(employee.employee_name.lastIndexOf(" ") + 1 ) +  '@email.com' }} </td>
            <td> {{ (employee.employee_salary / 12).toFixed(2) }} € </td>
            <td>{{ new Date().getFullYear() - employee.employee_age }}</td>
            <td >
