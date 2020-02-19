@@ -18,6 +18,10 @@
 <body>
 
   <div id="app">
+    <div class="alert alert-warning" v-if="employees.length===0">
+      <strong>Aucune information n'est disponible pour le moment</strong>
+    </div>
+    
     <table class="table table-striped table-bordered">
       <thead>
         <tr>
